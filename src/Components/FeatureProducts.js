@@ -48,9 +48,7 @@ const FeatureProducts = () => {
                 <div className="card">
                   <figure>
                     <img src={current.image[0].img} alt={current.name} />
-                    {/* <figcaption className="caption">
-                      TRENDING
-                    </figcaption> */}
+
                   </figure>
 
                   <div className="card-data">

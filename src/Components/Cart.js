@@ -34,7 +34,7 @@ const Cart = () => {
       const userId = obj._id;
 
       axios
-        .post("http://localhost:4000/api/displayCart", { userId: userId })
+        .post("https://myblog-g1y9.onrender.com/api/displayCart", { userId: userId })
         .then((res) => setCart(res.data.user.cart))
         .catch((err) => console.log(err));
     }
@@ -48,7 +48,7 @@ const Cart = () => {
     const obj = JSON.parse(jsonString);
     const userId = obj._id;
 
-    axios.post('http://localhost:4000/api/closeProduct', { userId: userId, productId: pid })
+    axios.post('https://myblog-g1y9.onrender.com/api/closeProduct', { userId: userId, productId: pid })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
 
@@ -62,7 +62,7 @@ const Cart = () => {
     const obj = JSON.parse(jsonString);
     const userId = obj._id;
 
-    axios.post("http://localhost:4000/api/setIncrease", { userId: userId, productId: pid })
+    axios.post("https://myblog-g1y9.onrender.com/api/setIncrease", { userId: userId, productId: pid })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   }
@@ -74,7 +74,7 @@ const Cart = () => {
     const obj = JSON.parse(jsonString);
     const userId = obj._id;
 
-    axios.post("http://localhost:4000/api/setDecrease", { userId: userId, productId: pid })
+    axios.post("https://myblog-g1y9.onrender.com/api/setDecrease", { userId: userId, productId: pid })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   }
@@ -86,7 +86,7 @@ const Cart = () => {
     const obj = JSON.parse(jsonString);
     const userId = obj._id;
 
-    axios.post("http://localhost:4000/api/place", { userId: userId })
+    axios.post("https://myblog-g1y9.onrender.com/api/place", { userId: userId })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   }

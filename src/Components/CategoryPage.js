@@ -7,11 +7,7 @@ import ProductList from './ProductSection/ProductList';
 
 import axios from 'axios';
 
-
-
-
-// const Api = "https://ecommerceserver-tn9j.onrender.com/api/category"
-const Api = "http://localhost:4000/api/category";
+const Api = "https://myblog-g1y9.onrender.com/api/category";
 
 const CategoryPage = ({ urlCategory }) => {
   const [data, setData] = useState([])
