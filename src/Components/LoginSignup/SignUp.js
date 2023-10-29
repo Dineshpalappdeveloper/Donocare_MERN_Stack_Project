@@ -30,7 +30,7 @@ const SignUp = () => {
         setData(registerInput)
 
         axios.post('https://wide-eyed-moth-cloak.cyclic.app/api/register', data)
-            .then((res) => console.log(res.data), toast('Registered Successfully'))
+            .then((res) => console.log(res.data), toast('Registered Successfully, try to login'))
             .catch(err => console.log(err))
     }
 
