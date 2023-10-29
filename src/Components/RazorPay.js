@@ -18,7 +18,7 @@ const RazorPay = (props) => {
                 key: `${data.key_id}`,
                 amount: data.amount,
                 currency: 'INR',
-                name: 'Tech Shop',
+                name: 'Donocare Shop',
                 description: 'Payment for Purchase',
                 order_id: data.order_id,
 
