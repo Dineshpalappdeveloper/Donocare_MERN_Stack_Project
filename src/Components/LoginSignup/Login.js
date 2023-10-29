@@ -30,7 +30,7 @@ const Login = () => {
 
     setData(loginData)
 
-    axios.post("http://localhost:4000/api/login", data)
+    axios.post("https://wide-eyed-moth-cloak.cyclic.app/api/login", data)
       .then(res => {
         if (res.data.token) {
           localStorage.setItem("token", res.data.token)

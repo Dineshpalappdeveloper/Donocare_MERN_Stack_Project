@@ -6,8 +6,9 @@ import { AppContext } from '../Context/ProductsContext';
 import ProductList from './ProductSection/ProductList';
 
 import axios from 'axios';
+// const Api = "http://localhost:4000/api/category";
 
-const Api = "https://myblog-g1y9.onrender.com/api/category";
+const Api = "https://wide-eyed-moth-cloak.cyclic.app/api/category";
 
 const CategoryPage = ({ urlCategory }) => {
   const [data, setData] = useState([])

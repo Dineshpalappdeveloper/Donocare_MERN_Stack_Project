@@ -3,7 +3,8 @@ import axios from 'axios'
 import reducer from '../reducer/Reducer'
 
 export const AppContext = createContext();
-const Api = "https://myblog-g1y9.onrender.com/api/products";
+// const Api = "http://localhost:4000/api/products/";
+const Api = "https://wide-eyed-moth-cloak.cyclic.app/api/products";
 
 const initialState = {
     isLoading: false,

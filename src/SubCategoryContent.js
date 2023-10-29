@@ -6,7 +6,8 @@ import { AppContext } from './Context/ProductsContext'
 import ProductList from './Components/ProductSection/ProductList'
 import styled from 'styled-components'
 
-const Api = "http://localhost:4000/api/company"
+// const Api = "http://localhost:4000/api/company"
+const Api = "https://wide-eyed-moth-cloak.cyclic.app/api/company"
 const SubCategoryContent = () => {
 
   const { gridView } = useContext(AppContext)

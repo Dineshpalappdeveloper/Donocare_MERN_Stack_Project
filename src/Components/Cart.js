@@ -34,7 +34,7 @@ const Cart = () => {
       const userId = obj._id;
 
       axios
-        .post("https://myblog-g1y9.onrender.com/api/displayCart", { userId: userId })
+        .post("https://wide-eyed-moth-cloak.cyclic.app/api/displayCart", { userId: userId })
         .then((res) => setCart(res.data.user.cart))
         .catch((err) => console.log(err));
     }
@@ -48,7 +48,7 @@ const Cart = () => {
     const obj = JSON.parse(jsonString);
     const userId = obj._id;
 
-    axios.post('https://myblog-g1y9.onrender.com/api/closeProduct', { userId: userId, productId: pid })
+    axios.post('https://wide-eyed-moth-cloak.cyclic.app/api/closeProduct', { userId: userId, productId: pid })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
 
@@ -62,7 +62,7 @@ const Cart = () => {
     const obj = JSON.parse(jsonString);
     const userId = obj._id;
 
-    axios.post("https://myblog-g1y9.onrender.com/api/setIncrease", { userId: userId, productId: pid })
+    axios.post("https://wide-eyed-moth-cloak.cyclic.app/api/setIncrease", { userId: userId, productId: pid })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   }
@@ -74,7 +74,7 @@ const Cart = () => {
     const obj = JSON.parse(jsonString);
     const userId = obj._id;
 
-    axios.post("https://myblog-g1y9.onrender.com/api/setDecrease", { userId: userId, productId: pid })
+    axios.post("https://wide-eyed-moth-cloak.cyclic.app/api/setDecrease", { userId: userId, productId: pid })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   }
@@ -86,7 +86,7 @@ const Cart = () => {
     const obj = JSON.parse(jsonString);
     const userId = obj._id;
 
-    axios.post("https://myblog-g1y9.onrender.com/api/place", { userId: userId })
+    axios.post("https://wide-eyed-moth-cloak.cyclic.app/api/place", { userId: userId })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   }
